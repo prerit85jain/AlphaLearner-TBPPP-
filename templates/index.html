@@ -1,26 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>AlphaLearner Practice Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha-learners-home</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
-<body background="image.png" id="background">
-    <h1>AlphaLearner</h1>
-    <div id="div1">
-       <h1>Practice Mode</h1>
-       <button id="practiceButton" onclick="location.href='practice.html';">Practice</button>
-
-    </div>
-
-    <div id="div1">
-        <h1>Quiz Mode</h1>
-         <button id="practiceButton">Take Quiz</button>
-     </div>
-
-     <div id="div1">
-        <h1>Training Mode</h1>
-        <br>
-         <button id="practiceButton" >Train</button>
-     </div>
+<body>
+    <nav>
+        <div class="nav_header">
+            <div class="nav_logo">
+                <a href="#">Alpha-learner</a>
+            </div>
+            <div class="nav_menu_btn" id="menu-btn">
+                <span><i class="ri-menu-line"></i></span>
+            </div>
+        </div>
+        <ul class="nav_links" id="nav-link">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+        <div class="nav_btns">
+            <button class="btn_sign_up">Sign Up</button>
+            <button class="btn_sign_in">Sign in</button>
+        </div>
+    </nav>
 </body>
 </html>
