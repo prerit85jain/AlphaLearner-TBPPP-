@@ -1,0 +1,43 @@
+body { font-family: Arial, sans-serif;
+    display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0; 
+     color: rgb(252, 252, 255);
+    } 
+ #content {
+      margin: 20px; 
+     text-align: center;
+  } 
+ canvas { margin-bottom: 10px; }
+ 
+ #background{
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ 
+ #practiceButton{
+     padding: auto;
+     color: rgb(252, 252, 255);
+     background-color:rgb(15, 198, 15);
+     border: none;
+     border-radius: 5px;
+     padding: 12px 50px;
+     cursor:pointer;
+    
+ }
+ #div1{
+     border-radius: 5px;
+     text-align: center;
+     margin-bottom: 30px;
+     padding-left: 100px;
+     padding-right: 100px;
+     height: 150px;
+     width: 50%;
+     background-color: rgb(206, 190, 214);
+     color: black;
+ 
+ }
+ 
