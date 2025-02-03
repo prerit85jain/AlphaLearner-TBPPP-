@@ -162,7 +162,7 @@ nav{
         color: var(--text-dark);   
     }
 
-    .btn_sign_up: hover{
+    .btn_sign_up hover{
         color: var(--primary-color-light);
     }
 
@@ -171,7 +171,7 @@ nav{
         color: var(--white);
     }
 
-    .btn_sign_in: hover{
+    .btn_sign_in hover{
         background-color: var(--primary-color-dark);
     }
 }
