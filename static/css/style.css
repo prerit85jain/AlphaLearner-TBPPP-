@@ -1,13 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+
+:root{
+    --primary-color-light:  #717d7e;
+    --primary-color-dark:  #283747 ;
+    --text-dark:  #d7bde2    ;
+    --text-light:  #f6ddcc ;
+    --white: #fff;
+    --orange:  #ff4f36;
+    --max-width: 1200px;
+    --header-font: 'Smooch Sans', sans-serif;
+}
+
 *{
-    margin : 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+}
+img{
+    display: flex;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 body{
-    min-height: 100vh;
-    background: url('../images/handwriting1.jpg') no-repeat; 
-    background-size: cover;
-    background-position: center;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+nav{
+    position: fixed;
+    isolation: isolate;
+    width: 100%;
+    z-index: 9;
+}
+
+.nav_header{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color-dark);
+}
+.nav_logo a{
+    font-size: 1.75rem;
+    font-weight: 400;
+    font-family: 'Smooch Sans', sans-serif;
+    color: var(--orange);
+}
+
+.nav_menu_btn {
+    font-size: 1.5rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.nav_links{
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--primary-color-dark);
+    transition: 0.5s;
+    z-index: -1;
+    transform: translateY(-100%);
+}
+.nav_links open{
+    transform: translateY(0);
+}
+.nav_links a{
+    font-weight: 500;
+    counter-reset: var(--text-light);
+}
+
+.nav_links a:hover{
+    color: var(--text-dark);
+}
+
+.nav_btns{
+    display: none;
+}
+
+
+@media (width > 760px){
+    nav{
+        position: static;
+        padding-block: 2rem 0;
+        padding-inline: 1rem;
+        max-width: var(--max-width);
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .nav_header{
+        flex: 1;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .nav_logo a{
+        color: var(--orange);
+    }
+
+    .nav_logo a span{
+        color: var(--text-light);
+    }
+
+    .nav_menu_btn{
+        display: none;
+    }
+
+    .nav_links{
+        position: static;
+        padding: 0;
+        flex-direction: row;
+        background-color: transparent;
+        transform: none;
+    }
+
+    .nav_links a{
+        padding-block: 5px;
+        color: var(--text-dark);
+        border-bottom: 4px solid transparent;
+    }
+
+    .nav_links a:hover{
+        border-bottom: 4px solid var(--orange);
+    }
+
+    .nav_btns{
+        display: flex;
+        flex: 1;
+    }
+
+    .nav_btns .btn{
+        padding: 0.75rem 1.5rem;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        white-space: nowrap;
+        border-radius: 10px;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    .btn_sign_up{
+        background-color: transparent;
+        color: var(--text-dark);   
+    }
+
+    .btn_sign_up hover{
+        color: var(--primary-color-light);
+    }
+
+    .btn_sign_in{
+        background-color: var(--text-dark);
+        color: var(--white);
+    }
+
+    .btn_sign_in hover{
+        background-color: var(--primary-color-dark);
+    }
 }
