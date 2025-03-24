@@ -15,6 +15,10 @@ def features():
 def prac():
     return render_template('practice.html')
 
+@app.route('/signup')
+def sign_up():
+    return render_template('signup.html')
+
 @app.route('/traing_data')
 def train_data():
     return render_template('train_data.html')

@@ -89,7 +89,27 @@ nav{
 
 .nav_btns{
     display: none;
+    cursor: pointer;
 }
+
+.btn_sign_up, .btn_sign_in {
+    padding: 12px 25px;
+    font-size: 16px;
+    color: white;
+    background-color: #0078d7; /* Default blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: 1px solid #000000;
+  }
+
+  .btn_sign_up:hover, .btn_sign_in:hover {
+    /* background-color: #005f9e; */
+    transform: scale(1.05);
+    background-color: var(--text-dark);
+    color: var(--white);
+  }
 
 
 @media (width > 760px){
@@ -159,7 +179,8 @@ nav{
 
     .btn_sign_up{
         background-color: transparent;
-        color: var(--text-dark);   
+        color: var(--text-dark);
+        cursor: pointer;  
     }
 
     .btn_sign_up hover{
@@ -167,8 +188,11 @@ nav{
     }
 
     .btn_sign_in{
-        background-color: var(--text-dark);
-        color: var(--white);
+        /* background-color: var(--text-dark); */
+        /* color: var(--white); */
+        background-color: transparent;
+        color: var(--text-dark);
+        cursor: pointer; 
     }
 
     .btn_sign_in hover{
