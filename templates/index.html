@@ -25,8 +25,8 @@
             <li><a href="#">Contact us</a></li>
         </ul>
         <div class="nav_btns">
-            <button class="btn_sign_up">Sign Up</button>
-            <button class="btn_sign_in">Sign in</button>
+            <a href="{{ url_for('signup') }}"><button class="btn_sign_up">Sign Up</button></a>
+            <a href="{{ url_for('signin') }}"><button class="btn_sign_in">Sign In</button></a>
         </div>
     </nav>
 
